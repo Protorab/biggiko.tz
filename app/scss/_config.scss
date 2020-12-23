@@ -1,9 +1,9 @@
 // USER VARIABLES SECTION
-$accent: #417486; // Accent Color
-$accentHover: rgb(196, 28, 48); // Accent hover Color
-$mainColor:#003e59; // Body Background Color
+$accent: rgb(0, 134, 191); // Accent Color
+$accentHover: rgb(24, 106, 136); // Accent hover Color
+$mainColor:#d3d3d3; // Body Background Color
 $fontsize: 10px; // Body Font Size
-$textcolor: #eaf2f5; // Text Color
+$textcolor: #555; // Text Color
 $lineheight: 1.65; // Document Line Height
 $userfont: Roboto,
 sans-serif; // User Font Family
@@ -11,7 +11,8 @@ $systemfont: -apple-system,
 BlinkMacSystemFont,
 Arial,
 sans-serif; // System Font Family
-
+$maxWidth: 1920;
+$maxWidthContainer:1400;
 
 
 // ZEROING SECTION
@@ -185,7 +186,7 @@ sans-serif; // System Font Family
 // GENERAL DOCUMENT STYLES
 
 ::placeholder {
-	color: $textcolor;
+	color: $mainColor;
 }
 
 ::selection {
@@ -371,20 +372,22 @@ section,
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 }
 
 .t,
 h,
 .h {
-
 	font-weight: 800;
 	position: relative;
 	z-index: 1;
 
 	&1 {
+
+
 		margin: 0;
 		padding: 0;
-		font-size: 4rem;
+		font-size: 3.5rem;
 		line-height: 134%;
 		font-weight: 900;
 		position: relative;
@@ -392,6 +395,8 @@ h,
 	}
 
 	&2 {
+
+
 		margin: 0;
 		padding: 0;
 		font-size: 3rem;
@@ -402,6 +407,8 @@ h,
 	}
 
 	&3 {
+
+
 		margin: 0;
 		padding: 0;
 		font-size: 2rem;
@@ -412,6 +419,8 @@ h,
 	}
 
 	&4 {
+
+
 		margin: 0;
 		padding: 0;
 		font-size: 1.8rem;
@@ -422,6 +431,8 @@ h,
 	}
 
 	&5 {
+
+
 		margin: 0;
 		padding: 0;
 		font-size: 1.6rem;
@@ -431,24 +442,6 @@ h,
 		z-index: 1;
 	}
 
-	@media only screen and (max-width : 1440px) {
-		&1 {
-			font-size: 4.8rem;
-		}
-
-		&2 {
-			font-size: 4rem;
-		}
-
-		&3 {
-			font-size: 3.8rem;
-		}
-
-		&4 {
-			font-size: 2.3rem;
-
-		}
-	}
 
 	@media only screen and (max-width : 768px) {
 		&1 {
@@ -509,5 +502,30 @@ label {
 		font-size: 1.2rem;
 
 	}
-
 }
+
+@media screen and (max-width : 900px) and (orientation:landscape) {}
+
+@media only screen and (max-width : 1920px) {}
+
+@media only screen and (max-width : 1680px) {}
+
+@media only screen and (max-width : 1369px) {}
+
+@media only screen and (max-width : 1440px) {}
+
+@media only screen and (max-width : 1280px) {}
+
+@media only screen and (max-width : 1024px) {}
+
+@media only screen and (max-width : 800px) {}
+
+@media only screen and (max-width : 768px) {}
+
+@media only screen and (max-width : 600px) {}
+
+@media only screen and (max-width : 533px) {}
+
+@media only screen and (max-width : 360px) {}
+
+@media only screen and (max-width : 320px) {}
